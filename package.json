@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "jest --config jest.config.mjs",
     "parse": "babel **/*.js"
@@ -11,11 +11,12 @@
   "keywords": [],
   "author": "Ahmed Aziz Abbassi",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "@babel/cli": "^7.25.6",
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@babel/register": "^7.24.6",
+    "@jest/globals": "^29.7.0",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0"
   }

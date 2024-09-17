@@ -1,5 +1,30 @@
-import find_book from "../src/binarySearch";
+import Search from "../src/binarySearch";
+import {test, describe, expect, it} from '@jest/globals'
 
-test('It should return -1', () => {
-    expect(find_book(['a', 'b', 'c'], 'h')).toBe({index: -1, steps: 2})
-})
+const testCases = [
+    {
+        Case: 1,
+        List: ['a', 'b', 'c'],
+        Target: 'b',
+        Output: { index: 1, steps: 1 }
+    },
+    {
+        Case: 2,
+        List: ["Algorithms", "Clean Code", "Data Structures", "Design Patterns", "Grokking Algorithms"],
+        Target: "Design Patterns",
+        Output: { index: 3, steps: 2 }
+    },
+    {
+        Case: 3,
+        List: ['a', 'b', 'c', 'd', 'e', 'f'],
+        Target: 'e',
+        Output: { index: 4, steps: 2 }
+    },
+]
+
+for (const testCase of testCases) {
+    test(`Test case ${testCase.Case}`, () => {
+        expect(Search(testCase.List, testCase.Target)).toStrictEqual(testCase.Output);
+    });
+}
+

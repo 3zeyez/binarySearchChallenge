@@ -176,7 +176,7 @@ const config = {
   // A map from regular expressions to paths to transformers
   // transform: undefined,
   transform: {
-    '^.+\\.js$': ['@babel/register', { rootMode: 'upward' }],
+    '^.+\\.js$': "babel-jest",
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
@@ -198,5 +198,4 @@ const config = {
   // watchman: true,
 };
 
-const processAsync = async () => config;
-export { processAsync };
+export default config;
