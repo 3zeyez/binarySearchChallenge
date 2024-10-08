@@ -24,25 +24,25 @@ const testCases = [
         Case: 4,
         List: [1, 3, 5, 7, 9],
         Target: 5,
-        Output: { index: 2, steps: 2 }
+        Output: { index: 2, steps: 1 }
     },
     {
         Case: 5,
         List: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
         Target: 18,
-        Output: { index: 8, steps: 4 }
+        Output: { index: 8, steps: 3 }
     },
     {
         Case: 6,
         List: ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape'],
         Target: 'date',
-        Output: { index: 3, steps: 3 }
+        Output: { index: 3, steps: 1 }
     },
     {
         Case: 7,
         List: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
         Target: 10,
-        Output: { index: 0, steps: 4 }
+        Output: { index: 0, steps: 3 }
     },
     {
         Case: 8,
@@ -72,7 +72,7 @@ const testCases = [
         Case: 12,
         List: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5],
         Target: 3,
-        Output: { index: 4, steps: 3 }
+        Output: { index: 4, steps: 1 }
     },
     {
         Case: 13,
@@ -84,25 +84,25 @@ const testCases = [
         Case: 14,
         List: [1, 3, 5, 7, 9],
         Target: 5,
-        Output: { index: 2, steps: 2 }
+        Output: { index: 2, steps: 1 }
     },
     {
         Case: 15,
         List: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
         Target: 18,
-        Output: { index: 8, steps: 4 }
+        Output: { index: 8, steps: 3 }
     },
     {
         Case: 16,
         List: ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape'],
         Target: 'date',
-        Output: { index: 3, steps: 3 }
+        Output: { index: 3, steps: 1 }
     },
     {
         Case: 17,
         List: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
         Target: 10,
-        Output: { index: 0, steps: 4 }
+        Output: { index: 0, steps: 3 }
     },
     {
         Case: 18,
@@ -132,7 +132,7 @@ const testCases = [
         Case: 22,
         List: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5],
         Target: 3,
-        Output: { index: 4, steps: 3 }
+        Output: { index: 4, steps: 1 }
     },
     {
         Case: 23,
@@ -144,13 +144,13 @@ const testCases = [
         Case: 24,
         List: [-10, -5, 0, 5, 10, 15, 20],
         Target: -5,
-        Output: { index: 1, steps: 3 }
+        Output: { index: 1, steps: 2 }
     },
     {
         Case: 25,
         List: [1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9],
         Target: 6.6,
-        Output: { index: 5, steps: 4 }
+        Output: { index: 5, steps: 3 }
     },
     {
         Case: 26,
@@ -159,22 +159,22 @@ const testCases = [
         Output: { index: 5, steps: 3 }
     },
     {
-        Case: 17,
-        List: [true, true, true, true, false, false, false],
+        Case: 27,
+        List: [false, false, false, false, true, true, true],
         Target: false,
-        Output: { index: 4, steps: 3 }
+        Output: { index: 3, steps: 1 }
     },
     {
         Case: 28,
-        List: ['Z', 'Y', 'X', 'W', 'V', 'U', 'T', 'S', 'R', 'Q'],
+        List: ['Z', 'Y', 'X', 'W', 'V', 'U', 'T', 'S', 'R', 'Q'].reverse(),
         Target: 'S',
-        Output: { index: 7, steps: 4 }
+        Output: { index: 2, steps: 3 }
     },
     {
         Case: 29,
         List: [1, 3, 5, 7, 9, 11, 13, 15],
         Target: 10,
-        Output: { index: -1, steps: 4 }
+        Output: { index: -1, steps: 3 }
     },
     {
         Case: 30,
@@ -186,7 +186,7 @@ const testCases = [
         Case: 31,
         List: [0, 0, 0, 0, 1, 1, 1, 1],
         Target: 1,
-        Output: { index: 4, steps: 3 }
+        Output: { index: 5, steps: 2 }
     },
     {
         Case: 32,
