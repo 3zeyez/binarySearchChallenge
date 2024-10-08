@@ -1,5 +1,8 @@
 ## Title: "The Library Book Hunt"
 
+### Wher to work:
+[./binarySearchStarter.js](./binarySearchStarter.js)
+
 ### Background:
 You are a librarian at a large university library. The library has just received a donation of 1,000,000 new books, all sorted alphabetically by title. A student comes to you asking for help finding a specific book.
 
