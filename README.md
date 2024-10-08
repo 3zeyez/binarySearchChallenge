@@ -3,7 +3,7 @@
 
 ## Installation
 
-1. `git clone git@github.com:3zeyez/binarySearchChallenge.git`
+1. `git clone https://github.com/3zeyez/binarySearchChallenge.git`
 2. `npm i` or `yarn install` or `pnpm i` (choose your favorite package manager)
 3. `npm run test` or `yarn run test` or `pnpm run test`
 
